@@ -1,0 +1,18 @@
+/*
+Theme Name: OneBerlin
+Theme URI: https://oneberlinmedia.de/
+Author: OneBerlin – MB Verlag & Media Sounds
+Author URI: https://oneberlinmedia.de/
+Description: Eigenes Block-Theme für OneBerlin – Bücher · Musik · Software und mehr aus Berlin. Markenfarben Navy & Gold, Brandenburger-Tor-Logo, WooCommerce-Shop, Radio-, Musik-, Software- und Magazinbereiche. Schriften lokal eingebunden (keine Verbindung zu Google Fonts).
+Requires at least: 6.5
+Tested up to: 6.9
+Requires PHP: 7.4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: oneberlin
+Tags: e-commerce, block-patterns, full-site-editing, wide-blocks, custom-colors, custom-logo, editor-style
+WC requires at least: 9.0
+*/
+
+/* Die eigentlichen Stile liegen in assets/css/oneberlin.css und theme.json. */

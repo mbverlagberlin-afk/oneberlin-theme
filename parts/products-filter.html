@@ -1,0 +1,72 @@
+<!-- wp:group {"className":"ogs-cat-box","layout":{"type":"default"}} -->
+<div class="wp-block-group ogs-cat-box"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Kategorien</h3>
+<!-- /wp:heading -->
+
+<!-- wp:woocommerce/product-categories {"hasCount":false,"hasEmpty":false,"isHierarchical":true} /-->
+
+<!-- wp:html -->
+<script>
+(function(){
+function init(){
+var box=document.querySelector('.ogs-cat-box');if(!box||box.dataset.ogs)return;
+var items=box.querySelectorAll('li');if(!items.length)return;box.dataset.ogs='1';
+var path=location.pathname.replace(/\/$/,'');
+items.forEach(function(li){
+var sub=null;for(var i=0;i<li.children.length;i++){if(li.children[i].tagName==='UL')sub=li.children[i];}
+var a=li.querySelector(':scope>a');
+if(a){try{if(new URL(a.href).pathname.replace(/\/$/,'')===path){li.classList.add('ogs-cur');var p=li.parentElement;while(p&&p!==box){if(p.tagName==='LI')p.classList.add('ogs-open');p=p.parentElement;}li.classList.add('ogs-open');}}catch(e){}}
+if(sub){var b=document.createElement('button');b.type='button';b.className='ogs-tg';b.setAttribute('aria-label','Unterkategorien ein- oder ausklappen');
+b.textContent=li.classList.contains('ogs-open')?'−':'+';
+b.addEventListener('click',function(){var o=li.classList.toggle('ogs-open');b.textContent=o?'−':'+';});
+li.insertBefore(b,sub);}
+});
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+setTimeout(init,800);
+})();
+</script>
+<!-- /wp:html --></div>
+<!-- /wp:group -->
+
+<!-- wp:woocommerce/product-filters {"style":{"spacing":{"blockGap":"24px"}}} -->
+<div class="wp-block-woocommerce-product-filters wc-block-product-filters" style="--wc-product-filters-text-color:#0C1A33;--wc-product-filters-background-color:#fff;--wc-product-filter-block-spacing:24px">
+	<!-- wp:woocommerce/product-filter-active -->
+	<div class="wp-block-woocommerce-product-filter-active">
+		<!-- wp:woocommerce/product-filter-removable-chips -->
+		<div class="wp-block-woocommerce-product-filter-removable-chips wc-block-product-filter-removable-chips"></div>
+		<!-- /wp:woocommerce/product-filter-removable-chips -->
+
+		<!-- wp:woocommerce/product-filter-clear-button -->
+			<!-- wp:buttons {"layout":{"type":"flex","verticalAlignment":"stretched"}} -->
+			<div class="wp-block-buttons">
+				<!-- wp:button {"width":100,"className":"wc-block-product-filter-clear-button is-style-outline","style":{"border":{"width":"1px"},"typography":{"textDecoration":"none"},"outline":"none","fontSize":"medium","spacing":{"padding":{"left":"8px","right":"8px","top":"5px","bottom":"5px"}}}} -->
+				<div class="wp-block-button has-custom-width wp-block-button__width-100 wc-block-product-filter-clear-button is-style-outline"><a class="wp-block-button__link wp-element-button" style="border-width:1px;padding-top:5px;padding-right:8px;padding-bottom:5px;padding-left:8px;text-decoration:none">Filter zurücksetzen</a></div>
+				<!-- /wp:button -->
+			</div>
+			<!-- /wp:buttons -->
+		<!-- /wp:woocommerce/product-filter-clear-button -->
+	</div>
+	<!-- /wp:woocommerce/product-filter-active -->
+
+	<!-- wp:woocommerce/product-filter-price {"borderColor":"line","style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":"14px","width":"1px"}}} -->
+	<div class="wp-block-woocommerce-product-filter-price has-border-color has-line-border-color" style="border-width:1px;border-radius:14px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+		<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"0.625rem","top":"0"}},"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"700","lineHeight":"1.5"}}} -->
+		<h3 class="wp-block-heading" style="margin-top:0;margin-bottom:0.625rem;font-size:16px;font-style:normal;font-weight:700;line-height:1.5">Preissuche</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:woocommerce/product-filter-price-slider {"showInputFields":true,"inlineInput":false} -->
+		<div class="wp-block-woocommerce-product-filter-price-slider wc-block-product-filter-price-slider"></div>
+		<!-- /wp:woocommerce/product-filter-price-slider -->
+	</div>
+	<!-- /wp:woocommerce/product-filter-price -->
+</div>
+<!-- /wp:woocommerce/product-filters -->
+
+<!-- wp:html -->
+<style>.ogs-side-ads{margin-top:24px;display:none;flex-direction:column;gap:14px}body.term-buecher .ogs-side-ads{display:flex}.ogs-side-ads .ogs-ad-lab{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#6C727F;margin:0}.ogs-side-ads .ogs-ad{box-sizing:border-box;border:1px solid #E0E5EB;border-radius:12px;padding:12px;background:#fff;text-align:center}.ogs-side-ads .ogs-ad img{max-width:100%;height:auto;display:block;margin:0 auto}</style>
+<div class="ogs-side-ads"><p class="ogs-ad-lab">Anzeige</p>
+<div class="ogs-ad">
+<a rel="sponsored" href="https://www.awin1.com/cread.php?s=4923087&amp;v=130797&amp;q=617184&amp;r=3101188"><img src="https://www.awin1.com/cshow.php?s=4923087&amp;v=130797&amp;q=617184&amp;r=3101188" alt="PERSEN smart Creator" loading="lazy"></a>
+</div></div>
+<!-- /wp:html -->

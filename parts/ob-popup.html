@@ -1,0 +1,46 @@
+<!-- wp:html -->
+<div id="ob-pop" class="ob-pop" role="dialog" aria-modal="true" aria-label="Anzeige: EVERCROSS" hidden>
+<div class="ob-pop-box">
+<div class="ob-pop-top"><span>Anzeige · Partner</span><button type="button" class="ob-pop-x" aria-label="Schließen">×</button></div>
+<a class="ob-pop-link" rel="sponsored nofollow noopener" target="_blank" href="https://www.awin1.com/cread.php?awinmid=129787&amp;awinaffid=3101188"><img class="ob-pop-img" src="" alt="EVERCROSS – Anzeige" width="300" height="250"></a>
+<p class="ob-pop-txt"><b>EVERCROSS</b> – E-Scooter, E-Bikes &amp; Fahrräder. Kostenloser Versand, 30 Tage Rückgabe.</p>
+<a class="ob-pop-btn" rel="sponsored nofollow noopener" target="_blank" href="https://www.awin1.com/cread.php?awinmid=129787&amp;awinaffid=3101188">Zum EVERCROSS-Shop →</a>
+</div>
+</div>
+<style>
+.ob-pop{position:fixed;inset:0;z-index:100000;background:rgba(7,18,44,.62);display:flex;align-items:center;justify-content:center;padding:16px;animation:obFade .25s ease}
+.ob-pop[hidden]{display:none!important}
+.ob-pop-box{background:#fff;border-radius:16px;max-width:360px;width:100%;padding:14px 16px 18px;box-shadow:0 30px 80px rgba(0,0,0,.45);border-top:4px solid #D4AF37;text-align:center;font-family:inherit}
+.ob-pop-top{display:flex;justify-content:space-between;align-items:center;margin:0 0 10px}
+.ob-pop-top span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6b7280}
+.ob-pop-x{border:0;background:#0B1F44;color:#fff;width:32px;height:32px;border-radius:50%;font-size:20px;line-height:1;cursor:pointer}
+.ob-pop-x:hover{background:#1F4FA3}
+.ob-pop-img{display:block;width:100%;height:auto;border-radius:10px}
+.ob-pop-txt{margin:12px 0 12px;font-size:14px;line-height:1.5;color:#0B1F44}
+.ob-pop-btn{display:inline-block;background:#0B1F44;color:#fff!important;text-decoration:none!important;font-weight:700;font-size:14px;padding:11px 20px;border-radius:999px}
+.ob-pop-btn:hover{background:#1F4FA3}
+@keyframes obFade{from{opacity:0}to{opacity:1}}
+</style>
+<script>
+(function(){
+ var K='ob_pop_evercross',d=document,w=window;
+ try{if(sessionStorage.getItem(K))return;}catch(e){}
+ var b=d.body;if(!b||/woocommerce-checkout|woocommerce-cart|wp-admin/.test(b.className))return;
+ var imgs=['https://a1.awin1.com/ads/awin/129787/img300250-1794191468762.jpg','https://a1.awin1.com/ads/awin/129787/img300-1793240382650.jpg'];
+ var p=d.getElementById('ob-pop');if(!p)return;
+ p.querySelector('.ob-pop-img').src=imgs[Math.floor(Math.random()*imgs.length)];
+ function close(){p.hidden=true;try{sessionStorage.setItem(K,'1');}catch(e){}}
+ p.querySelector('.ob-pop-x').addEventListener('click',close);
+ p.addEventListener('click',function(e){if(e.target===p)close();});
+ [].forEach.call(p.querySelectorAll('a'),function(a){a.addEventListener('click',function(){try{sessionStorage.setItem(K,'1');}catch(e){}setTimeout(function(){p.hidden=true;},300);});});
+ d.addEventListener('keydown',function(e){if(e.key==='Escape'&&!p.hidden)close();});
+ var tries=0;
+ function show(){
+  var other=d.querySelector('.onx-overlay.onx-open');
+  if(other&&other.offsetParent!==null&&tries<20){tries++;return setTimeout(show,3000);}
+  p.hidden=false;
+ }
+ setTimeout(show,7000);
+})();
+</script>
+<!-- /wp:html -->

@@ -1,0 +1,68 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","align":"wide","className":"overflow-hidden ogs-shop","style":{"spacing":{"blockGap":"24px","margin":{"top":"0"},"padding":{"top":"8px","bottom":"56px"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group alignwide overflow-hidden ogs-shop" style="margin-top:0;padding-top:8px;padding-bottom:56px"><!-- wp:html -->
+<style>
+.ogs-shop-hero,.ogs-own,.ogs-shop-sec{display:none}
+body.woocommerce-shop .ogs-shop-hero,body.post-type-archive-product .ogs-shop-hero,body.woocommerce-shop .ogs-own,body.post-type-archive-product .ogs-own,body.woocommerce-shop .ogs-shop-sec,body.post-type-archive-product .ogs-shop-sec{display:block}
+body.search .ogs-shop-tiles,body.search .ogs-shop-hero,body.search .ogs-own,body.search .ogs-shop-sec{display:none!important}
+.ogs-shop-hero{position:relative;overflow:hidden;border-radius:20px;padding:36px 38px;margin:0 0 4px;background:radial-gradient(circle at 88% 15%,rgba(212,175,55,.22) 0,rgba(212,175,55,0) 45%),linear-gradient(135deg,#0B1F44,#173470);color:#fff;border-bottom:3px solid #D4AF37}
+.ogs-shop-hero p.e{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#D4AF37;margin:0 0 10px}
+.ogs-shop-hero h2{font-size:clamp(26px,3.6vw,40px);margin:0 0 10px;color:#fff;font-weight:800;line-height:1.1;letter-spacing:-.02em}
+.ogs-shop-hero p.s{margin:0;color:#D3E0F5;max-width:680px;line-height:1.6}
+.ogs-shop-hero .ogs-trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin:18px 0 0;padding:0;list-style:none;font-size:14px;color:#fff}
+.ogs-shop-hero .ogs-trust li:before{content:'\2713';color:#D4AF37;font-weight:800;margin-right:7px}
+.ogs-sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:26px 0 12px;flex-wrap:wrap}
+.ogs-sec-h h2{font-size:clamp(21px,2.4vw,27px);font-weight:800;color:#0C1A33;margin:0;letter-spacing:-.01em}
+.ogs-sec-h a{font-weight:700;font-size:14.5px;text-decoration:none}
+.ogs-sec-h p{margin:0;color:#5B6678;font-size:14.5px;flex:1 1 100%}
+.ogs-own-tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:0 0 18px}
+.ogs-own-tiles a{display:block;padding:20px 20px 18px;border-radius:16px;background:linear-gradient(135deg,#0B1F44,#12295A);color:#fff!important;text-decoration:none!important;transition:.2s;border-bottom:3px solid #D4AF37}
+.ogs-own-tiles a:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(11,31,68,.25)}
+.ogs-own-tiles strong{display:block;font-size:18px;font-weight:800;margin-bottom:4px;color:#fff}
+.ogs-own-tiles span{display:block;font-size:13.5px;color:#C9D3E6;line-height:1.45}
+.ogs-own-tiles em{display:inline-block;margin-top:10px;font-style:normal;font-weight:700;font-size:13.5px;color:#D4AF37}
+.ogs-own .woocommerce ul.products{display:grid!important;grid-template-columns:repeat(4,1fr);gap:16px;margin:0!important;padding:0!important}
+.ogs-own .woocommerce ul.products:before,.ogs-own .woocommerce ul.products:after{display:none!important}
+.ogs-own .woocommerce ul.products li.product{width:auto!important;margin:0!important;float:none!important;display:flex;flex-direction:column}
+.ogs-own .woocommerce ul.products li.product .woocommerce-loop-product__title{font-size:14.5px!important;line-height:1.35;color:#0C1A33;font-weight:600;padding:8px 0 4px!important}
+.ogs-own .woocommerce ul.products li.product img{aspect-ratio:1/1;height:auto!important;border-radius:10px}
+.ogs-own .woocommerce ul.products li.product .button{margin-top:auto!important;text-align:center;padding:10px 14px!important;font-size:14px!important}
+.ogs-shop-tiles{display:none;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin:0 0 6px}
+body.woocommerce-shop .ogs-shop-tiles,body.post-type-archive-product .ogs-shop-tiles{display:grid}
+.ogs-shop-tiles a{display:flex;gap:12px;align-items:center;padding:13px 15px;border-radius:14px;background:#fff;border:1px solid #E1E8F2;text-decoration:none!important;color:#0C1A33!important;font-weight:600;font-size:14.5px;transition:.2s}
+.ogs-shop-tiles a:hover{border-color:#1565D8;box-shadow:0 10px 26px rgba(11,27,63,.09);transform:translateY(-2px)}
+.ogs-shop-tiles i{flex:0 0 10px;height:10px;border-radius:50%;background:linear-gradient(135deg,#1565D8,#2F8BFF)}
+.ogs-shop-tiles a.all{background:#F5F8FC}
+.ogs-shop-tiles a.all i{background:#D4AF37}
+@media(max-width:900px){.ogs-own-tiles,.ogs-own .woocommerce ul.products{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.ogs-shop-hero{padding:24px 20px}}
+</style>
+<div class="ogs-shop-hero"><p class="e">OneBerlin Shop</p><h2>Eigene Produkte und ausgewählte Partner</h2><p class="s">Bücher, CDs &amp; Vinyl, Software und Merchandise direkt von OneBerlin – dazu das sortierte Sortiment unserer Partner. Bei Partnerprodukten gelangen Sie mit „Zum Angebot“ direkt zum Händler (Anzeige); für Sie ändert sich der Preis nicht.</p><ul class="ogs-trust"><li>Alle Preise in Euro (€)</li><li>Verlag &amp; Label aus Berlin</li><li>Partnerlinks klar gekennzeichnet</li></ul></div>
+<!-- /wp:html -->
+
+<!-- wp:template-part {"slug":"archive-head"} /-->
+
+<!-- wp:html -->
+<div class="ogs-own"><div class="ogs-sec-h"><h2>Eigene Produkte von OneBerlin</h2><p>Direkt aus unserem Verlag, Musiklabel und Softwarebereich.</p></div><div class="ogs-own-tiles"><a href="/produktkategorie/buecher/"><strong>Bücher</strong><span>Krimi, Thriller, Roman und Fantasy aus dem eigenen Verlag</span><em>Zu den Büchern →</em></a><a href="/produktkategorie/musik/"><strong>Musik</strong><span>CDs &amp; Vinyl aus unserem Musiklabel</span><em>Zu CDs &amp; Vinyl →</em></a><a href="/produktkategorie/software/"><strong>Software</strong><span>Eigene Apps und Programme, u. a. OnePC Guard</span><em>Zur Software →</em></a><a href="/produktkategorie/merchandise/"><strong>Merchandise</strong><span>Kleidung im eigenen Design</span><em>Zum Merchandise →</em></a></div></div>
+<!-- /wp:html -->
+
+<!-- wp:group {"className":"ogs-own","layout":{"type":"default"}} -->
+<div class="wp-block-group ogs-own"><!-- wp:shortcode -->
+[products category="buecher,musik,software,merchandise" limit="8" columns="4" orderby="date" order="DESC"]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<script>(function(){var p=location.pathname,b=function(h,c){document.write('<div class="ogs-ad-strip'+(c?' '+c:'')+'"><p>Anzeige<\/p>'+h+'<\/div>')},a=function(s,v,q,n){return '<a rel="sponsored noopener" href="https://www.awin1.com/cread.php?s='+s+'&v='+v+'&q='+q+'&r=3101188"><img src="https://www.awin1.com/cshow.php?s='+s+'&v='+v+'&q='+q+'&r=3101188" alt="'+n+'"><\/a>'},t=function(r){return new RegExp('^\\/produktkategorie\\/('+r+')(\\/|$)').test(p)};if(/^\/shop(\/page\/\d+)?\/?$/.test(p)){b(a(3534965,69786,480010,'Lunzo'),'ogs-ad-small');}else if(t('esim')){b(a(4856682,107814,509921,'Simbye eSIM'));}else if(t('iphone-2|ipad|watch')){b('<scr'+'ipt language="JavaScript" src="https://www.awin1.com/cawshow.php?v=11430&s=2417233&q=361931&r=3101188"><\/scr'+'ipt>');}else if(t('audio')){b(a(4892296,128051,608963,'Hollyland'));}else if(t('duftkerzen|raumduefte|deko-wohnen|wohnaccessoires')){b(a(4915812,130755,616834,'Ava &amp; May'));}else if(t('ueberwachungskameras|smart-home-alarmsysteme|tuerklingeln')){b(a(4754968,125816,603036,'Imou'));}else if(t('unternehmen-zu-verkaufen|gewerbeimmobilien')){b(a(3960286,116725,520967,'World Businesses for Sale'));}})();</script>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div class="ogs-shop-sec"><div class="ogs-sec-h"><h2>Partner-Sortiment nach Bereichen</h2><a href="/kategorien/">Alle Kategorien →</a><p>Markenprodukte unserer Partner, nach Produktart sortiert (Anzeige).</p></div></div>
+<div class="ogs-shop-tiles"><a href="/produktkategorie/mode-schuhe-taschen/"><i></i>Mode, Schuhe &amp; Taschen</a><a href="/produktkategorie/elektronik-smart-home/"><i></i>Elektronik &amp; Smart Home</a><a href="/produktkategorie/apple/"><i></i>Apple</a><a href="/produktkategorie/haus-kueche-garten/"><i></i>Haus, Küche &amp; Garten</a><a href="/produktkategorie/moebel/"><i></i>Möbel</a><a href="/produktkategorie/wohnen-deko-duefte/"><i></i>Wohnen, Deko &amp; Düfte</a><a href="/produktkategorie/beauty-pflege/"><i></i>Beauty &amp; Pflege</a><a href="/produktkategorie/sport-outdoor/"><i></i>Sport &amp; Outdoor</a><a href="/produktkategorie/spielzeug-kinder/"><i></i>Spielzeug &amp; Kinder</a><a href="/produktkategorie/tierbedarf/"><i></i>Tierbedarf</a><a href="/produktkategorie/buero-arbeitsplatz/"><i></i>Büro &amp; Arbeitsplatz</a><a href="/produktkategorie/betrieb-gewerbe/"><i></i>Betrieb &amp; Gewerbe</a><a href="/produktkategorie/reisen-tarife/"><i></i>Reisen, eSIM &amp; Tarife</a><a href="/produktkategorie/geschenke/"><i></i>Geschenke &amp; Freizeit</a><a class="all" href="/kategorien/"><i></i>Alle Kategorien →</a></div>
+<!-- /wp:html -->
+
+<!-- wp:template-part {"slug":"archive-body"} /--></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

@@ -1,0 +1,187 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"layout": {
+			"contentSize": "1200px",
+			"wideSize": "1296px"
+		},
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": [
+				{ "slug": "base", "name": "Weiß", "color": "#FFFFFF" },
+				{ "slug": "contrast", "name": "Tinte", "color": "#0C1A33" },
+				{ "slug": "navy", "name": "OneBerlin Navy", "color": "#0B1F44" },
+				{ "slug": "navy-deep", "name": "Navy Tief", "color": "#07122C" },
+				{ "slug": "navy-light", "name": "Navy Hell", "color": "#173470" },
+				{ "slug": "gold", "name": "Tor-Gold", "color": "#D4AF37" },
+				{ "slug": "gold-dark", "name": "Gold Dunkel", "color": "#8C6A00" },
+				{ "slug": "primary", "name": "Aktion Blau", "color": "#1565D8" },
+				{ "slug": "primary-hover", "name": "Aktion Blau (Hover)", "color": "#0F4FB0" },
+				{ "slug": "sky", "name": "Himmelblau", "color": "#2F8BFF" },
+				{ "slug": "ice", "name": "Eisblau", "color": "#EAF2FD" },
+				{ "slug": "muted", "name": "Text gedämpft", "color": "#5B6678" },
+				{ "slug": "line", "name": "Linie", "color": "#E1E8F2" },
+				{ "slug": "surface", "name": "Fläche", "color": "#F5F8FC" },
+				{ "slug": "gray", "name": "Grau", "color": "#D9D9D9" },
+				{ "slug": "gray-50", "name": "Grau 50", "color": "#F5F7FA" },
+				{ "slug": "gray-100", "name": "Grau 100", "color": "#EEF1F6" },
+				{ "slug": "gray-200", "name": "Grau 200", "color": "#E0E5EB" },
+				{ "slug": "gray-210", "name": "Grau 210", "color": "#E1E5EA" },
+				{ "slug": "gray-250", "name": "Grau 250", "color": "#E4E9F1" },
+				{ "slug": "gray-300", "name": "Grau 300", "color": "#CAD0D9" },
+				{ "slug": "gray-400", "name": "Grau 400", "color": "#9CA3AF" },
+				{ "slug": "gray-500", "name": "Grau 500", "color": "#6C727F" },
+				{ "slug": "gray-600", "name": "Grau 600", "color": "#4E5562" },
+				{ "slug": "gray-700", "name": "Grau 700", "color": "#333D4C" },
+				{ "slug": "gray-800", "name": "Grau 800", "color": "#222934" },
+				{ "slug": "gray-900", "name": "Grau 900", "color": "#181D25" },
+				{ "slug": "gray-950", "name": "Grau 950", "color": "#131920" },
+				{ "slug": "info", "name": "Info", "color": "#2F6ED5" },
+				{ "slug": "success", "name": "Erfolg", "color": "#33B36B" },
+				{ "slug": "warning", "name": "Warnung", "color": "#FC9231" },
+				{ "slug": "danger", "name": "Gefahr", "color": "#F03D3D" }
+			],
+			"gradients": [
+				{ "slug": "nacht", "name": "Berliner Nacht", "gradient": "linear-gradient(135deg,#07152F 0%,#0B1F44 55%,#1F4FA3 130%)" },
+				{ "slug": "navy", "name": "Navy", "gradient": "linear-gradient(135deg,#0B1B3F 0%,#173470 100%)" },
+				{ "slug": "gold", "name": "Gold", "gradient": "linear-gradient(135deg,#E9C85A 0%,#D4AF37 55%,#A8841C 100%)" }
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"slug": "body",
+					"name": "Inter",
+					"fontFamily": "Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+					"fontFace": [
+						{ "fontFamily": "Inter", "fontWeight": "400", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/inter-regular.woff" ] },
+						{ "fontFamily": "Inter", "fontWeight": "400", "fontStyle": "italic", "fontDisplay": "swap", "src": [ "file:./assets/fonts/inter-italic.woff" ] },
+						{ "fontFamily": "Inter", "fontWeight": "500", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/inter-medium.woff" ] },
+						{ "fontFamily": "Inter", "fontWeight": "600", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/inter-semibold.woff" ] },
+						{ "fontFamily": "Inter", "fontWeight": "700", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/inter-bold.woff" ] },
+						{ "fontFamily": "Inter", "fontWeight": "800", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/inter-extrabold.woff" ] }
+					]
+				},
+				{
+					"slug": "heading",
+					"name": "Inter Display",
+					"fontFamily": "\"Inter Display\", Inter, system-ui, -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif",
+					"fontFace": [
+						{ "fontFamily": "Inter Display", "fontWeight": "300", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/interdisplay-light.woff" ] },
+						{ "fontFamily": "Inter Display", "fontWeight": "700", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/interdisplay-bold.woff" ] },
+						{ "fontFamily": "Inter Display", "fontWeight": "800", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/interdisplay-extrabold.woff" ] }
+					]
+				}
+			],
+			"fontSizes": [
+				{ "slug": "extra-small", "name": "Sehr klein", "size": "12px" },
+				{ "slug": "small", "name": "Klein", "size": "14px" },
+				{ "slug": "regular", "name": "Normal", "size": "16px" },
+				{ "slug": "medium", "name": "Mittel", "size": "18px", "fluid": { "min": "17px", "max": "18px" } },
+				{ "slug": "large", "name": "Groß", "size": "24px", "fluid": { "min": "20px", "max": "24px" } },
+				{ "slug": "x-large", "name": "Sehr groß", "size": "36px", "fluid": { "min": "28px", "max": "36px" } },
+				{ "slug": "xx-large", "name": "Riesig", "size": "56px", "fluid": { "min": "36px", "max": "56px" } }
+			]
+		},
+		"spacing": {
+			"units": [ "px", "em", "rem", "%", "vh", "vw" ],
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{ "slug": "10", "name": "XS", "size": "8px" },
+				{ "slug": "20", "name": "S", "size": "16px" },
+				{ "slug": "30", "name": "M", "size": "24px" },
+				{ "slug": "40", "name": "L", "size": "clamp(24px, 2.33vw, 32px)" },
+				{ "slug": "50", "name": "XL", "size": "clamp(32px, 4vw, 48px)" },
+				{ "slug": "60", "name": "XXL", "size": "clamp(40px, 5vw, 64px)" },
+				{ "slug": "70", "name": "XXXL", "size": "clamp(56px, 7vw, 96px)" }
+			]
+		},
+		"shadow": {
+			"defaultPresets": false,
+			"presets": [
+				{ "slug": "karte", "name": "Karte", "shadow": "0 14px 34px rgba(11,27,63,.10)" },
+				{ "slug": "tief", "name": "Tief", "shadow": "0 30px 70px rgba(11,27,63,.28)" }
+			]
+		},
+		"custom": {
+			"radius": { "small": "10px", "medium": "14px", "large": "20px", "pill": "999px" }
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|body",
+			"fontSize": "var:preset|font-size|regular",
+			"lineHeight": "1.65"
+		},
+		"spacing": {
+			"blockGap": "24px",
+			"padding": { "left": "24px", "right": "24px", "top": "0", "bottom": "0" }
+		},
+		"elements": {
+			"link": {
+				"color": { "text": "var:preset|color|primary" },
+				"typography": { "textDecoration": "none" },
+				":hover": { "color": { "text": "var:preset|color|primary-hover" }, "typography": { "textDecoration": "underline" } }
+			},
+			"heading": {
+				"color": { "text": "var:preset|color|contrast" },
+				"typography": { "fontFamily": "var:preset|font-family|heading", "fontWeight": "800", "lineHeight": "1.15", "letterSpacing": "-0.02em" }
+			},
+			"h1": { "typography": { "fontSize": "var:preset|font-size|xx-large", "lineHeight": "1.06" } },
+			"h2": { "typography": { "fontSize": "var:preset|font-size|x-large" } },
+			"h3": { "typography": { "fontSize": "var:preset|font-size|large" } },
+			"h4": { "typography": { "fontSize": "var:preset|font-size|medium" } },
+			"h5": { "typography": { "fontSize": "var:preset|font-size|regular" } },
+			"h6": { "typography": { "fontSize": "var:preset|font-size|small", "textTransform": "uppercase", "letterSpacing": "0.12em" } },
+			"button": {
+				"color": { "background": "var:preset|color|primary", "text": "var:preset|color|base" },
+				"border": { "radius": "999px" },
+				"spacing": { "padding": { "top": "13px", "bottom": "13px", "left": "26px", "right": "26px" } },
+				"typography": { "fontWeight": "700", "fontSize": "15px", "lineHeight": "1.2" },
+				":hover": { "color": { "background": "var:preset|color|primary-hover", "text": "var:preset|color|base" } },
+				":focus": { "outline": { "color": "var:preset|color|gold", "offset": "2px", "style": "solid", "width": "2px" } }
+			},
+			"caption": { "color": { "text": "var:preset|color|muted" }, "typography": { "fontSize": "var:preset|font-size|small" } }
+		},
+		"blocks": {
+			"core/navigation": { "typography": { "fontSize": "15px", "fontWeight": "600" } },
+			"core/post-title": { "typography": { "fontFamily": "var:preset|font-family|heading", "fontWeight": "800" } },
+			"core/query-title": { "typography": { "fontFamily": "var:preset|font-family|heading", "fontWeight": "800" } },
+			"core/separator": { "color": { "text": "var:preset|color|line" } },
+			"core/quote": {
+				"border": { "left": { "color": "var:preset|color|gold", "width": "4px", "style": "solid" } },
+				"spacing": { "padding": { "left": "20px" } },
+				"typography": { "fontSize": "var:preset|font-size|medium" }
+			},
+			"core/search": { "border": { "radius": "999px" } },
+			"core/post-date": { "color": { "text": "var:preset|color|muted" }, "typography": { "fontSize": "var:preset|font-size|small" } },
+			"core/post-terms": { "typography": { "fontSize": "var:preset|font-size|extra-small", "fontWeight": "700", "textTransform": "uppercase", "letterSpacing": "0.1em" } },
+			"core/post-featured-image": { "border": { "radius": "14px" } }
+		}
+	},
+	"customTemplates": [
+		{ "name": "seite-vollbreite", "title": "Seite in voller Breite (ohne Titel)", "postTypes": [ "page", "post" ] },
+		{ "name": "page-no-title", "title": "Seite ohne Titel", "postTypes": [ "page" ] },
+		{ "name": "blank", "title": "Leer (ohne Kopf & Fuß)", "postTypes": [ "page" ] }
+	],
+	"templateParts": [
+		{ "name": "header", "title": "Kopfbereich", "area": "header" },
+		{ "name": "footer", "title": "Fußbereich", "area": "footer" },
+		{ "name": "ob-popup", "title": "OneBerlin Partner-Popup (EVERCROSS)", "area": "uncategorized" },
+		{ "name": "archive-head", "title": "Kategorie Kopf", "area": "uncategorized" },
+		{ "name": "archive-body", "title": "Kategorie Produktliste", "area": "uncategorized" },
+		{ "name": "products-filter", "title": "Produktfilter & Kategorien", "area": "uncategorized" },
+		{ "name": "comments", "title": "Kommentare", "area": "uncategorized" },
+		{ "name": "post-card", "title": "Beitragskarte", "area": "uncategorized" }
+	]
+}
