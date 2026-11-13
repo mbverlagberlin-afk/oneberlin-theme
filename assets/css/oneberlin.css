@@ -32,10 +32,10 @@ body{color:var(--ob-text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoot
 ::selection{background:var(--ob-gold);color:var(--ob-navy)}
 :focus-visible{outline:2px solid var(--ob-gold);outline-offset:2px}
 img{max-width:100%;height:auto}
-.wp-site-blocks{min-height:100vh;display:flex;flex-direction:column}
-.wp-site-blocks>main,.wp-site-blocks>.wp-block-group:has(>main){flex:1 0 auto}
 .wp-site-blocks>*+*{margin-block-start:0}
-.wp-site-blocks>footer{margin-top:auto}
+/* Abstand unter dem Kopf als Außenabstand des <header>, damit er nicht mit klebt */
+header.wp-block-template-part:has(.ogs-header){margin-bottom:40px}
+header.wp-block-template-part>.ogs-header{margin-bottom:0!important}
 .wp-element-button,.wp-block-button__link{border-radius:999px;transition:background .2s,transform .2s,box-shadow .2s}
 .wp-block-button.is-style-outline .wp-block-button__link{border:2px solid currentColor;background:transparent}
 .screen-reader-text{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}

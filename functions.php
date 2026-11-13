@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'ONEBERLIN_VERSION', '1.0.0' );
+define( 'ONEBERLIN_VERSION', '1.0.1' );
 
 /**
  * Theme-Unterstützungen.
