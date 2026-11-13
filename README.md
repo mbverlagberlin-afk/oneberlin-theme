@@ -39,10 +39,10 @@ patterns/            Block-Vorlagen
 Version in `style.css` und `functions.php` (`ONEBERLIN_VERSION`) erhöhen, dann:
 
 ```bash
-git tag v1.0.1 && git push --tags
+git commit -am "Version 1.0.1" && git push
 ```
 
-GitHub baut automatisch `oneberlin.zip` und hängt es an das Release.
+GitHub baut bei jedem Push automatisch `oneberlin.zip` und legt das Release `v<Version>` an (bzw. aktualisiert es).
 
 ## Lizenz
 
